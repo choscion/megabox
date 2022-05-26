@@ -108,7 +108,7 @@
         padding: 0 25px 100px;
         // position: relative;
         .wrapper{
-            overflow-y: scroll;
+            overflow: auto;
             height: 100%;
         }
         .quick-title{
