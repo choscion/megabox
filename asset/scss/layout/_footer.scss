@@ -1,0 +1,107 @@
+footer{
+    background-color: #f5f5f5;
+    padding-top: 25px;
+    padding-bottom: 66px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-fixed{
+    position: fixed;
+    left: 0;bottom: 0;
+    z-index: 999;
+    height: 56px;
+    width: 100%;
+    background-color: #fff;
+    &.zdown{
+        z-index: 997;
+    }
+    .footer-gnb-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 0 8px;
+        height: 100%;
+        .footer-gnb-item{
+            width: calc(100%/5);
+            height: 100%;
+            a{  
+                margin: 0 auto;
+                display: block;
+                width: 30px;
+                padding: 0px 17px 0;
+                font-size: 10px;
+                color: #2b2c41;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 29px;height: 30px;
+                    margin: 5px auto 0;
+                    padding-left: 1px;
+                }
+                &.home{
+                    &::before{
+                        background: url(../images/icon/home.png) center/cover no-repeat;
+                    }
+                }
+                &.store{
+                    &::before{
+                        background: url(../images/icon/store.png) center/cover no-repeat;
+                    }
+                }
+                &.buy{
+                    &::before{
+                        background: url(../images/icon/buyticket.png) center/cover no-repeat;
+                    }
+                }
+                &.event{
+                    &::before{
+                        background: url(../images/icon/event01.png) center/cover no-repeat;
+                    }
+                }
+                &.my{
+                    &::before{
+                        background: url(../images/icon/my.png) center/cover no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-top{
+    color: #999;
+    .policy-list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        // width: 320px;
+        // max-width: 284px;
+        min-width: 284px;
+        margin: 0 auto;
+        .policy-item{
+            padding: 5px 5px;
+            &.sidebar{
+                &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 1px;height: 9px;
+                    background-color: #e0e0e0;
+                    margin-left: 10px;
+                }
+            }
+            &.pi{
+                color: #14b9cb;
+            }
+        }
+    }
+}
+.footer-bottom{
+    color: #bbb;
+    margin-top: 15px;
+    .add-area{
+        &>span{margin-left: 8px;}
+    }
+    .copy{margin: 10px 0;}
+}

@@ -1,0 +1,24 @@
+.btn-more, .link-more{
+    &::after{
+        content: '';
+        display: inline-block;
+        width: 12px;height: 12px;
+        margin-left: 5px;
+        vertical-align: -1px;
+        background: url(../images/icon/link-more.png) center/cover no-repeat;
+    }
+}
+
+.link-detail{
+    position: absolute;
+    right: 0;top: 6px;
+    display: inline-block;
+    width: 24px;height: 24px;
+    background: url(../images/icon/link-detail.png) center/cover no-repeat;
+}
+
+.sc-post .swiper-slide .content-wrap .like::before,
+.sc-post .swiper-slide .content-wrap .reply::before{
+    background: url(../images/bg/bg-icon.png);
+    background-size: 334px 192px;
+}
