@@ -332,7 +332,6 @@ movieData("#필소","#rank06");
               html2 += '</div>';
               html2 += '<div class="inner">';
               html2 += '<div class="info-deliver">';
-              html2 += '<em class="badge">'+result[0].badge+'</em>';
               html2 += '<h3 class="info-title">'+result[0].title+'</h3>';
               html2 += '<span class="eng-title">'+result[0].titleEng+'</span>';
               html2 += '<span class="view-age">'+result[0].age+'</span>';
