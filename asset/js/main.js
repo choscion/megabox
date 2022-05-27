@@ -565,11 +565,8 @@ movieData("#필소","#rank06");
             } else if(movieNumb == 2){
               $('body').append(html2);
             }
-            // $('body').append(html);
-            // $('body').append(html2);
             $('body').addClass('noscroll');
             $('.hd-topfixed').addClass('zdown');
-            $('.footer-fixed').addClass('zdown');
 
             //rank-wrap 스크롤시 상단고정
             $('.rank-wrap').scroll(function () {
@@ -801,4 +798,5 @@ $.getJSON("./asset/data/post.json", function (data, textStatus, jqXHR) {
         $(targ).addClass('on').siblings().removeClass('on')
 
     })
+    ScrollTrigger.refresh();
 })
